@@ -1,0 +1,9 @@
+Information Security Policy
+
+Passwords must be at least 12 characters.
+
+Multi-factor authentication is mandatory.
+
+USB devices require approval.
+
+Incident response procedures are documented.

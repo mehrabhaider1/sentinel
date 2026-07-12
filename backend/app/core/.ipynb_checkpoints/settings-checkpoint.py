@@ -60,18 +60,6 @@ class Settings(BaseSettings):
 
     AI_BASE_URL: str = Field(default="http://localhost:8001/v1")
     AI_MODEL: str = Field(default="google/gemma-2-2b-it")
-    AI_API_KEY: str = Field(default="not-needed")GOOGLE_AI_STUDIO_API_KEY: str = Field(
-        default="",
-        description="Google AI Studio API key.",
-    )
-
-    GOOGLE_AI_STUDIO_MODEL: str = Field(
-        default="gemma-4-31b-it",
-        description="Gemma model served via Google AI Studio's free tier.",
-    )
-
-    AI_BASE_URL: str = Field(default="http://localhost:8001/v1")
-    AI_MODEL: str = Field(default="google/gemma-2-2b-it")
     AI_API_KEY: str = Field(default="not-needed")
 
 settings = Settings()

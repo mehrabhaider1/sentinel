@@ -2,21 +2,21 @@
 
 **Enterprise AI Governance, Security, Compliance & Risk Intelligence Platform**
 
-Built for the AMD Developer Hackathon — Track 3 (Unicorn Track)
+Built for the AMD Developer Hackathon Track 3 (Unicorn Track)
 
 ---
 
 ## What is Sentinel AI?
 
-Sentinel AI analyzes enterprise documents — AI usage policies, security policies, vendor contracts, internal documentation, and compliance reports — and produces automated, multi-agent AI risk analysis: security risk findings, compliance analysis against frameworks like ISO 27001 and NIST CSF, risk scoring, and prioritized recommendations.
+Sentinel AI analyzes enterprise documents, AI usage policies, security policies, vendor contracts, internal documentation, and compliance reports and produces automated, multi-agent AI risk analysis: security risk findings, compliance analysis against frameworks like ISO 27001 and NIST CSF, risk scoring, and prioritized recommendations.
 
-It's built for the people who currently do this manually: CISOs, compliance officers, and procurement teams evaluating AI vendor contracts, internal AI policies, and security documentation — a process that today is slow, expensive, and inconsistent.
+It's built for the people who currently do this manually: CISOs, compliance officers, and procurement teams evaluating AI vendor contracts, internal AI policies, and security documentation, a process that today is slow, expensive, and inconsistent.
 
 ## Why it matters (and why AMD)
 
-Compliance and security document review is sensitive by nature — the documents involved (vendor contracts, internal security posture, policy drafts) are exactly the kind of material an enterprise does *not* want routed through a third-party AI API.
+Compliance and security document review is sensitive by nature the documents involved (vendor contracts, internal security posture, policy drafts) are exactly the kind of material an enterprise does *not* want routed through a third-party AI API.
 
-Sentinel AI's inference pipeline runs **entirely on AMD GPU infrastructure** — the FastAPI backend and the Gemma-2 model itself (served via vLLM) both run on AMD-provisioned compute, with zero calls to any external AI API. This isn't just a hackathon technical choice — it's the correct architecture for this product category: enterprise compliance tooling with full data locality and no third-party inference dependency.
+Sentinel AI's inference pipeline runs **entirely on AMD GPU infrastructure**  the FastAPI backend and the Gemma-2 model itself (served via vLLM) both run on AMD-provisioned compute, with zero calls to any external AI API. This isn't just a hackathon technical choice — it's the correct architecture for this product category: enterprise compliance tooling with full data locality and no third-party inference dependency.
 
 
 ## Features

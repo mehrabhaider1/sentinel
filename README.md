@@ -18,35 +18,6 @@ Compliance and security document review is sensitive by nature — the documents
 
 Sentinel AI's inference pipeline runs **entirely on AMD GPU infrastructure** — the FastAPI backend and the Gemma-2 model itself (served via vLLM) both run on AMD-provisioned compute, with zero calls to any external AI API. This isn't just a hackathon technical choice — it's the correct architecture for this product category: enterprise compliance tooling with full data locality and no third-party inference dependency.
 
-## Architecture
-┌─────────────────────┐
-│   React Frontend    │  TypeScript, Tailwind, shadcn/ui
-│   (Vite build)      │
-└──────────┬──────────┘
-│ HTTPS
-▼
-┌─────────────────────────────────────┐
-│   FastAPI Backend                   │
-│   AMD Developer Cloud               │
-│   ─────────────────────             │
-│   • JWT auth                        │
-│   • SQLAlchemy + SQLite             │
-│   • Repository pattern              │
-│   • Parser factory (PDF/DOCX)       │
-│   • Multi-agent orchestration       │
-└──────────┬──────────────────────────┘
-│ OpenAI-compatible API (localhost)
-▼
-┌─────────────────────────────────────┐
-│   vLLM Inference Server             │
-│   AMD GPU (ROCm)                    │
-│   ─────────────────────             │
-│   Gemma-2-2B-IT                     │
-│   Security Agent · Compliance Agent │
-│   Risk Scoring · Recommendations    │
-└─────────────────────────────────────┘
-
-Both the API layer and the model inference run on AMD-provisioned GPU compute — no external inference API is used in the deployed system.
 
 ## Features
 

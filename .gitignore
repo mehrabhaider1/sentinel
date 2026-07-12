@@ -31,4 +31,5 @@ build/
 dist/
 
 # Fireworks executable
-firectl.exe
+firectl.exe.ipynb_checkpoints/
+backend/sentinel.db

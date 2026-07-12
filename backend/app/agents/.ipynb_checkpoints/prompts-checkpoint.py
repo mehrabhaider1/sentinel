@@ -18,7 +18,7 @@ SCORING RULES — follow these exactly:
 - If the highest finding severity is "Medium" (and none are High/Critical), risk_score MUST be between 30 and 54.
 - If all findings are "Low" or there are no findings, risk_score MUST be 29 or lower.
 - risk_level MUST correspond to the same band as risk_score.
-- risk_level must be exactly one of: Low, Medium, High, Critical — a single word, never combined or separated by "|".
+- risk_level must be exactly one of: Low, Medium, High, Critical — a single word, never combined or separated by "|"
 The JSON MUST exactly match:
 {{
     "risk_score": 0,

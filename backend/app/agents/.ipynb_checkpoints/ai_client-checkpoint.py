@@ -110,7 +110,7 @@ class AIClient:
         if first_brace != -1 and last_brace != -1 and last_brace > first_brace:
             text = text[first_brace : last_brace + 1]
 
-        def derive_risk_level(score: int) -> str:
+       def derive_risk_level(score: int) -> str:
             if score <= 20:
                 return "Low"
             elif score <= 50:

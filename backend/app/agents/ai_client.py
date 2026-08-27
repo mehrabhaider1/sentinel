@@ -139,7 +139,8 @@ class AIClient:
             logger.exception("AI provider response failed schema validation.")
             raise ValueError(
                 f"AI provider returned invalid schema:\n{text}"
-            ) from excfrom __future__ import annotations
+            ) from exc
+            
 
 import json
 import logging
